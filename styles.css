@@ -1,7 +1,7 @@
 
 body {
   position: relative;
-    background: url('images/window-background.png');
+    background: black;
     background-size: cover;
 }
 canvas {
@@ -16,42 +16,47 @@ img {
 }
 
 #win-screen {
-  background-image: url('images/winscreen.png');
+  background-image: url('images/winning.png');
   position: absolute;
   top: 0;
   right: 0
   bottom: 0;
-  left: 0;
+  left: -85px;
   width: 600px;
   height: 600px;
   margin: 0 34vw;
   background-repeat: no-repeat;
-  background-color: darkblue;
+  background-size: cover;
   visibility: hidden;
 }
 
 
 #start-screen {
-  display: inline-block;
-  background-image: url('images/start-screen.png');
+  /*display: inline-block;*/
+  background-image: url('images/startScreen2.png');
   display: block;
-  margin: auto;
+  position: absolute;
+  top: 150px;
+  left: 350px;
+  /*margin: auto;*/
   width: 600px;
   height: 600px;
   margin: auto;
   background-repeat: no-repeat;
-  background-color: lightblue;
+  /*background-size: cover;*/
+  /*background-color: lightblue;*/
   border: none;
   text-decoration: none;
   }
 
 #game-over-screen {
-    background-image: url('images/dead-frog.png');
+    background-image: url('images/sadBell.png');
+    background-size: cover;
     position: absolute;
     top: 0;
-    right: 0
+    right: 0;
     bottom: 0;
-    left: 0;
+    left: -65px;
     width: 600px;
     height: 600px;
     margin: 0 34vw;
@@ -61,8 +66,8 @@ img {
   }
 
   #start-button {
-    margin-top: 65%;
-    margin-left: 5%;
+    margin-top: 50%;
+    margin-left: 25%;
     font-family: Overlock SC;
     font-size: 30px;
     border-radius: 10vh;
@@ -73,13 +78,13 @@ img {
   }
 
   #start-button:hover {
-    background-color: magenta;
+    background-color: red;
     border: none;
   }
 
   #restart-button {
-    margin-top: 80%;
-    margin-left: 65%;
+    margin-top: 10%;
+    margin-left: 5%;
     font-family: Overlock SC;
     font-size: 30px;
     color: white;
@@ -91,32 +96,35 @@ img {
   }
 
   #restart-button:hover {
-    background-color: darkblue;
+    background-color: orange;
     color: white;
     border: none;
   }
 
-.title {
+/*.title {
     font-family: Monofett;
     font-size: 60px;
     margin-left: 48%;
     margin-top: 0
-}
+}*/
 
 .try-again-note {
   font-family: Overlock SC;
   font-size: 45px;
+  color: white;
   position: absolute;
-  left: 55px;
-  bottom: 100px;
+  left: 30px;
+  bottom: 180px;
+  width: 150px;
 }
 
 #next-level-button {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 67%;
     font-family: Overlock SC;
     font-size: 30px;
     color: white;
+    background-color: red;
     border-radius: 10vh;
     width: 170px;
     height: 70px;
@@ -125,16 +133,17 @@ img {
 }
 
 #next-level-button:hover{
-  background-color: magenta;
+  background-color: orange;
   border: none;
 }
 
 #reload-button {
-    margin-top: 5%;
+    margin-top: 2%;
     margin-left: 5%;
     font-family: Overlock SC;
     font-size: 30px;
     color: white;
+    background-color: blue;
     border-radius: 10vh;
     width: 170px;
     height: 70px;
@@ -142,15 +151,15 @@ img {
 }
 
 #reload-button:hover {
-  background-color: magenta;
+  background-color: orange;
   border: none;
 }
 
 .winNote {
   font-family: Overlock SC;
-  font-size: 45px;
+  font-size: 65px;
   position: absolute;
   left: 30px;
-  bottom: 10px;
+  bottom: 50px;
   color: white;
 }
